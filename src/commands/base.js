@@ -12,7 +12,7 @@ Base Command
 `
 
 BaseCommand.flags = {
-  org: flags.string({char: 'o', description: 'Github orginazation or owner'}),
+  org: flags.string({char: 'o', description: 'Github orginazation or owner', required: true}),
 }
 
 module.exports = BaseCommand
