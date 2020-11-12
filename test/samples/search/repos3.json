@@ -1,0 +1,19 @@
+{
+  "total_count": 3,
+  "incomplete_results": false,
+  "items": [
+    {
+      "name": "repo1",
+      "stargazers_count": 0,
+      "forks_count": 0
+    }, {
+      "name": "repo2",
+      "stargazers_count": 0,
+      "forks_count": 2
+    }, {
+      "name": "repo3",
+      "stargazers_count": 0,
+      "forks_count": 5
+    }
+  ]
+}

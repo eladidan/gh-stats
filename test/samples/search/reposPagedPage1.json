@@ -1,0 +1,11 @@
+{
+  "total_count": 1,
+  "incomplete_results": true,
+  "items": [
+    {
+      "name": "repo1",
+      "stargazers_count": 2,
+      "forks_count": 0
+    }
+  ]
+}

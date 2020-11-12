@@ -10,17 +10,25 @@
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
-    "@oclif/plugin-help": "^3.2.0"
+    "@oclif/plugin-help": "^3.2.0",
+    "@octokit/plugin-retry": "^3.0.4",
+    "@octokit/plugin-throttling": "^3.3.3",
+    "@octokit/rest": "^18.0.9",
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
     "@oclif/test": "^1.2.7",
     "chai": "^4.2.0",
+    "decache": "^4.6.0",
+    "dotenv": "^8.2.0",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
     "globby": "^10.0.2",
     "mocha": "^5.2.0",
-    "nyc": "^14.1.1"
+    "nock": "^13.0.5",
+    "nyc": "^14.1.1",
+    "require-dir": "^1.2.0"
   },
   "engines": {
     "node": ">=10.0.0"
@@ -50,7 +58,7 @@
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint .",
     "prepack": "oclif-dev manifest && oclif-dev readme && oclif-dev manifest && oclif-dev readme",
-    "start": "bin/run",
+    "start": "NODE_ENV=development bin/run",
     "test": "nyc mocha --forbid-only \"test/**/*.test.js\"",
     "version": "oclif-dev readme && git add README.md"
   }

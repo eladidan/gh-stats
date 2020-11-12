@@ -1,0 +1,47 @@
+{
+  "total_count": 10,
+  "incomplete_results": false,
+  "items": [
+    {
+      "name": "repo1",
+      "stargazers_count": 10,
+      "forks_count": 0
+    }, {
+      "name": "repo2",
+      "stargazers_count": 9,
+      "forks_count": 0
+    }, {
+      "name": "repo3",
+      "stargazers_count": 8,
+      "forks_count": 0
+    }, {
+      "name": "repo4",
+      "stargazers_count": 7,
+      "forks_count": 0
+    }, {
+      "name": "repo5",
+      "stargazers_count": 6,
+      "forks_count": 0
+    }, {
+      "name": "repo6",
+      "stargazers_count": 5,
+      "forks_count": 0
+    }, {
+      "name": "repo7",
+      "stargazers_count": 4,
+      "forks_count": 0
+    }, {
+      "name": "repo8",
+      "stargazers_count": 3,
+      "forks_count": 0
+    }, {
+      "name": "repo9",
+      "stargazers_count": 2,
+      "forks_count": 0
+    }, {
+      "name": "repo10",
+      "stargazers_count": 1,
+      "forks_count": 0
+    }
+  ]
+}

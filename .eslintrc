@@ -1,6 +1,7 @@
 {
   "extends": "oclif",
   "rules": {
-      "no-console": "off"
+      "no-console": "off",
+      "no-unused-expressions": "off"
   }
 }
