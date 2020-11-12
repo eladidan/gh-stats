@@ -59,7 +59,7 @@ DESCRIPTION
   Lists top repos for Github organization, by sort criteria.
 ```
 
-_See code: [src/commands/hello.js](https://github.com/eladidan/gh-stats/blob/v0.0.0/src/commands/repos/top.js)_
+_See code: [src/commands/repos/top.js](https://github.com/eladidan/gh-stats/blob/v0.0.0/src/commands/repos/top.js)_
 
 ## `gh-stats help [COMMAND]`
 
