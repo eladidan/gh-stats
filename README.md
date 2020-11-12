@@ -25,29 +25,41 @@ USAGE
   $ gh-stats COMMAND
 ...
 ```
+
+# Authentication
+This client uses Github's [v3 API](https://developer.github.com/v3/). Github Auth token is not required but for large organizations, using authentication can increase the rate limit against Github's API. See [creating a personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) on how to generate a new access token. Once created, export an env var:
+```sh
+export GITHUB_AUTH_TOKEN=<your auth token>
+```
+in the terminal session where you will be running `gh-stats`.
+
+## development
+In development, you can set your token in a `.env` file. The `bin/run` script will automatically recognze it and run it, as long as you are running with `NODE_ENV=development`.
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`gh-stats hello`](#gh-stats-hello)
+* [`gh-stats repos:top`](#gh-stats-repostop)
 * [`gh-stats help [COMMAND]`](#gh-stats-help-command)
 
-## `gh-stats hello`
+## `gh-stats repostop`
 
-Describe the command here
+List top repos in Github by various sort methods
 
 ```
 USAGE
-  $ gh-stats hello
+  $ gh-stats repos:top
 
 OPTIONS
-  -n, --name=name  name to print
+  -o, --org=<string>  Github organization
+  -s, --sort-by=[stars|forks|pull-requests|contribution-percentage]  sort method for top-list
+  -n, --number=<uint>  Number of results to list
 
 DESCRIPTION
   ...
-  Extra documentation goes here
+  Lists top repos for Github organization, by sort criteria.
 ```
 
-_See code: [src/commands/hello.js](https://github.com/eladidan/gh-stats/blob/v0.0.0/src/commands/hello.js)_
+_See code: [src/commands/hello.js](https://github.com/eladidan/gh-stats/blob/v0.0.0/src/commands/repos/top.js)_
 
 ## `gh-stats help [COMMAND]`
 
