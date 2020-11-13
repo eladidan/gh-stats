@@ -14,19 +14,22 @@ A cli tool for Github statistics
 <!-- tocstop -->
 # Usage
 <!-- usage -->
+##  Development
 ```sh-session
-$ npm install -g gh-stats
-$ gh-stats COMMAND
+# first time usage
+$ nvm install && nvm use
+$ npm install
 running command...
-$ gh-stats (-v|--version|version)
-gh-stats/0.0.0 darwin-x64 node-v12.13.1
-$ gh-stats --help [COMMAND]
+$ NODE_ENV=development bin/run --help [COMMAND]
 USAGE
   $ gh-stats COMMAND
 ...
 ```
 
-# Authentication
+## Published client
+Not supported
+
+# Github Authentication
 This client uses Github's [v3 API](https://developer.github.com/v3/). Github Auth token is not required but for large organizations, using authentication can increase the rate limit against Github's API. See [creating a personal access token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) on how to generate a new access token. Once created, export an env var:
 ```sh
 export GITHUB_AUTH_TOKEN=<your auth token>
@@ -41,7 +44,7 @@ In development, you can set your token in a `.env` file. The `bin/run` script wi
 * [`gh-stats repos:top`](#gh-stats-repostop)
 * [`gh-stats help [COMMAND]`](#gh-stats-help-command)
 
-## `gh-stats repostop`
+## `gh-stats repos:top`
 
 List top repos in Github by various sort methods
 
